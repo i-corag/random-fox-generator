@@ -31,14 +31,14 @@ export default function Home() {
 
       <main className='flex flex-col justify-center items-center'>
         <div className='w-full h-[80px] bg-orange-500 flex justify-center items-center shadow-xl'>
-          <h1 className='text-2xl font-bold text-stone-50'>RANDOM FOXES IMAGES GENERATOR</h1>
+          <h1 className='text-2xl font-bold text-stone-50 text-center'>RANDOM FOXES IMAGES GENERATOR</h1>
         </div>
           <h1 className="text-3xl font-bold underline"></h1>
           <button onClick={addNewFox} className='my-6 bg-transparent shadow-xl hover:bg-orange-500 text-orange-500 font-semibold text-lg hover:text-white py-1 px-3 border border-orange-500 hover:border-transparent rounded'>Get a  🦊</button>
           <ul className='w-11/12 mx-auto flex flex-wrap justify-center'>
             {images.map(({id,url}) =>(
             <li key={id} className='w-full m-4 rounded-md bg-orange-300 shadow-xl md:w-1/3'>
-              <LazyImage src={url} onClick={()=>console.log('hey')} className='w-full h-[350px] shadow-xl object-cover rounded-md'/>
+              <LazyImage src={url} onClick={()=>console.log('hey')} className='w-full h-[450px] shadow-xl object-cover rounded-md'/>
             </li>
           ))}
            </ul>
